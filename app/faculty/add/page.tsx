@@ -154,7 +154,7 @@ export default function FacultyPage() {
               </FormItem>
             )}
           />
-          <Button type="submit">{editing ? "Update Faculty" : "Add Faculty"}</Button>
+          <Button type="submit" className="mt-4 bg-emerald-600 hover:bg-emerald-500">{editing ? "Update Faculty" : "Add Faculty"}</Button>
         </form>
       </Form>
     </div>

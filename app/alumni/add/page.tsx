@@ -177,7 +177,7 @@ export default function AlumniPage() {
               </FormItem>
             )}
           />
-          <Button type="submit">{editing ? "Update Alumni" : "Add Alumni"}</Button>
+          <Button type="submit" className="mt-4 bg-emerald-600 hover:bg-emerald-500">{editing ? "Update Alumni" : "Add Alumni"}</Button>
         </form>
       </Form>
     </div>

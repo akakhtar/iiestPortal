@@ -70,7 +70,7 @@ export default function Contact() {
                             placeholder="Leave a comment..."
                         ></textarea>
                     </div>
-                    <Button type="submit">Send Message</Button>
+                    <Button type="submit" className="mt-4 bg-emerald-600 hover:bg-emerald-500">Send Message</Button>
                 </form>
 
                 <div className="mt-16">

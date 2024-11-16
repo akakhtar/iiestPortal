@@ -57,11 +57,12 @@ export default function DemoPage() {
           <Button
             variant="outline"
             size="sm"
+            className="bg-emerald-500 hover:bg-emerald-600 text-slate-100 hover:text-slate-200"
             onClick={() => router.push(`/faculty/${row.original.id}`)} // Navigate to edit page
           >
             Edit
           </Button>
-          <Button variant="outline" size="sm" onClick={() => handleDelete(row.original.id)}>
+          <Button variant="outline" size="sm" className="bg-red-500 hover:bg-red-700 text-slate-100 hover:text-slate-200" onClick={() => handleDelete(row.original.id)}>
             Delete
           </Button>
         </div>
@@ -70,10 +71,10 @@ export default function DemoPage() {
   ]
 
   return (
-    <div className="container mx-auto py-10">
+    <div className="container mx-auto py-10 bg-slate-100">
       <h1 className="text-2xl font-bold mb-6">Faculty Directory</h1>
       <DataTable columns={columns} data={data} />
-      <Link href="/faculty/add" className={buttonVariants({ variant: "default" })}>Add Faculty</Link>
+      <Link href="/faculty/add" className={`${buttonVariants({ variant: "default" })} mt-4 bg-emerald-600 hover:bg-emerald-500`}>Add Faculty</Link>
     </div>
   )
 }
