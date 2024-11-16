@@ -16,9 +16,11 @@
 // }
 // app/page.tsx
 import HeroSection from "@/components/HeroSection";
+import Testpage from "@/components/Test";
 
 export default function HomePage() {
   return (
-      <HeroSection />
+    <HeroSection />
+    // <Testpage/>
   );
 }
